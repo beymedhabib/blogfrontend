@@ -17,6 +17,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatIconModule} from '@angular/material/icon';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from './auth/auth.interseptor';
+import { ArticleComponent } from './article/article.component';
 
 
 
@@ -30,6 +31,7 @@ import { AuthInterceptor } from './auth/auth.interseptor';
     AuthComponent,
     LoginComponent,
     RegisterComponent,
+    ArticleComponent,
   ],
   imports: [
     BrowserModule,

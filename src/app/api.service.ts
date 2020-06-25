@@ -29,7 +29,7 @@ BaseUrl = environment.baseuri;
     return this.http.post(url, data);
   }
   Affectarticle(id, articleid) {
-    const url = `${this.BaseUrl}/article/affect/${id}/${articleid}`;
+    const url = `${this.BaseUrl}/affect/${id}/${articleid}`;
     return this.http.put(url, {});
   }
   upload(data, id) {
