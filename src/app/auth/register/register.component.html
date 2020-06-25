@@ -1,0 +1,64 @@
+<div class="page-header register-page header-filter Register" filter-color="black">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 ml-auto mr-auto">
+          <div class="card card-signup">
+            <h2 class="card-title text-center">Register</h2>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 ">
+                  <div class="social text-center">
+                    <button class="btn btn-just-icon btn-round btn-twitter">
+                      <i class="fa fa-twitter"></i>
+                    </button>
+                    <button class="btn btn-just-icon btn-round btn-dribbble">
+                      <i class="fa fa-dribbble"></i>
+                    </button>
+                    <button class="btn btn-just-icon btn-round btn-facebook">
+                      <i class="fa fa-facebook"> </i>
+                    </button>
+                  </div>
+                  <form [formGroup]="registerform" class="form">
+                    <div class="form-group has-default">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="material-icons">account_circle</i>
+                          </span>
+                        </div>
+                        <input type="text" formControlName="username" class="form-control" placeholder="User Name..." required>
+                        <!-- <mat-error *ngIf="registerForm.hasError('required','UserName')">Code Postal required</mat-error> -->
+                      </div>
+                    </div> 
+                    <div class="form-group has-default">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="material-icons">mail</i>
+                            </span>
+                          </div>
+                          <input type="email" formControlName="email" class="form-control" placeholder="Email...">
+                        </div>
+                      </div>
+                    <div class="form-group has-default">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="material-icons">lock_outline</i>
+                          </span>
+                        </div>
+                        <input type="password" formControlName="password" placeholder="Password..." class="form-control">
+                      </div>
+                    </div>
+                      <div class="text-center">
+                        <button  (click)="reg()" class="btn btn-primary btn-round mt-4">Get Started</button>
+                      </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

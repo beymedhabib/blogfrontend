@@ -1,0 +1,43 @@
+<div class="page-header register-page header-filter Login" filter-color="black" >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 ml-auto mr-auto">
+          <div class="card card-signup">
+            <h2 class="card-title text-center">My Article</h2>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 ">
+                  <div class="input-group mb-3">
+                      <div class="custom-file">
+                        <input type="file" (change)="onFileChange($event)" name="img" id="img" #img accept="image/*">
+                      </div>
+                    </div>
+                  <form [formGroup]="articleForm" class="form" method="" action="#">
+                    <div class="form-group has-default">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="material-icons">title</i>
+                          </span>
+                        </div>
+                        <input formControlName="title" type="text" class="form-control" placeholder="Title...">
+                      </div>
+                    </div>
+                    <div class="form-group has-default">
+                        <div class="form-group">
+                          <label >Subject</label>
+                            <textarea class="form-control" formControlName="subject"  rows="4"></textarea>
+                          </div>
+                    </div>
+                    <div class="text-center">
+                      <button (click)="post()"  class="btn btn-primary btn-round mt-4">Post</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
