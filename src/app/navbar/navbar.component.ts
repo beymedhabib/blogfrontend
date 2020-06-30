@@ -9,13 +9,15 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
+  token;
   constructor(public Api: ApiService, private router: Router) { }
 
   ngOnInit() {
+    this.token = this.Api.getToken();
   }
   logout() {
     this.Api.logout();
-    this.router.navigateByUrl('/login');
+    // this.router.navigateByUrl('/login');
   }
 
 }

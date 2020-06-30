@@ -1,0 +1,15 @@
+[0629/172148.469:ERROR:process_reader_win.cc(123)] NtOpenThread: {Accès refusé} Un processus a demandé l’accès a un objet, mais il ne bénéficie pas des autorisations nécessaires. (0xc0000022)
+[0629/172149.193:ERROR:exception_snapshot_win.cc(98)] thread ID 11692 not found in process
+[0629/172148.428:ERROR:scoped_process_suspend.cc(31)] NtSuspendProcess: Tentative d’accès à un processus en cours d’arrêt. (0xc000010a)
+[0629/172148.645:ERROR:process_reader_win.cc(123)] NtOpenThread: {Accès refusé} Un processus a demandé l’accès a un objet, mais il ne bénéficie pas des autorisations nécessaires. (0xc0000022)
+[0629/172148.510:ERROR:process_reader_win.cc(123)] NtOpenThread: {Accès refusé} Un processus a demandé l’accès a un objet, mais il ne bénéficie pas des autorisations nécessaires. (0xc0000022)
+[0629/172148.805:ERROR:process_reader_win.cc(123)] NtOpenThread: {Accès refusé} Un processus a demandé l’accès a un objet, mais il ne bénéficie pas des autorisations nécessaires. (0xc0000022)
+[0629/172148.500:ERROR:process_reader_win.cc(123)] NtOpenThread: {Accès refusé} Un processus a demandé l’accès a un objet, mais il ne bénéficie pas des autorisations nécessaires. (0xc0000022)
+[0629/172149.194:ERROR:exception_snapshot_win.cc(98)] thread ID 3040 not found in process
+[0629/172149.194:ERROR:exception_snapshot_win.cc(98)] thread ID 10580 not found in process
+[0629/172149.194:ERROR:exception_snapshot_win.cc(98)] thread ID 10476 not found in process
+[0629/172149.195:ERROR:exception_snapshot_win.cc(98)] thread ID 10160 not found in process
+[0629/172149.194:ERROR:process_info.cc(118)] ReadProcessMemory bool __cdecl crashpad::(anonymous namespace)::ReadStruct(HANDLE, crashpad::WinVMAddress, T *) [T = crashpad::process_types::PEB<crashpad::process_types::internal::Traits64>]: Seule une partie d’une requête ReadProcessMemory ou WriteProcessMemory a été effectuée. (0x12B)
+[0629/172149.196:ERROR:process_info.cc(551)] ReadProcessData failed
+[0629/172148.625:ERROR:process_reader_win.cc(123)] NtOpenThread: {Accès refusé} Un processus a demandé l’accès a un objet, mais il ne bénéficie pas des autorisations nécessaires. (0xc0000022)
+[0629/172149.199:ERROR:exception_snapshot_win.cc(98)] thread ID 13832 not found in process

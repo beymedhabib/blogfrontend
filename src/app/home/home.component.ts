@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,7 @@ export class HomeComponent implements OnInit {
 
   data: FormData;
   j ;
-  constructor(private Api: ApiService) {
+  constructor(private Api: ApiService, private router: Router) {
     this.data = new FormData();
 
   }

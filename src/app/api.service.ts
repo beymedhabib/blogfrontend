@@ -11,7 +11,11 @@ export class ApiService {
 BaseUrl = environment.baseuri;
   constructor(private http: HttpClient, private router: Router) { }
   token = localStorage.getItem('token');
-  // decoded = jwt_decode(this.token);
+
+  getToken() {
+    const token = localStorage.getItem('token');
+    return token;
+  }
 
   register(data) {
     const url = `${this.BaseUrl}/user/register`;
@@ -47,5 +51,13 @@ return this.http.delete(url);
   updatearticle(id, data) {
 const url = `${this.BaseUrl}/article/update/${id}`;
 return this.http.put(url, data);
+  }
+  getone(id) {
+    const url = `${this.BaseUrl}/article/${id}`;
+    return this.http.get(url);
+  }
+  comment(id, username, data) {
+    const url = `${this.BaseUrl}/article/comment/${id}/${username}`;
+    return this.http.put(url, data);
   }
 }

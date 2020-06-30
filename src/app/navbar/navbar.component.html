@@ -1,27 +1,27 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active"  *ngIf="Api.token === null">
+        <li class="nav-item active"  *ngIf="token === null">
             <a routerLink="login" class="nav-link " style="color: aliceblue;">
                 <mat-icon>fingerprint</mat-icon>
                 Login<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item active" *ngIf="Api.token !== null">
+        <li class="nav-item active" *ngIf="token !== null">
           <a routerLink="home" class="nav-link " style="color: aliceblue;">
               <mat-icon>home</mat-icon>
               HOME<span class="sr-only">(current)</span></a>
       </li>
-        <li class="nav-item"  *ngIf="Api.token === null">
+        <li class="nav-item"  *ngIf="token === null">
             <a routerLink="register" class="nav-link"  style="color: aliceblue;">
                 <mat-icon>person_add</mat-icon>
               Register</a>
         </li>
-        <li class="nav-item"  *ngIf="Api.token !== null">
+        <li class="nav-item"  *ngIf="token !== null">
           <a routerLink="add_article" class="nav-link"  style="color: aliceblue;">
               <mat-icon>add_circle</mat-icon>
             Add Article</a>
       </li>
-      <li class="nav-item"  *ngIf="Api.token !== null">
+      <li class="nav-item"  *ngIf="token !== null">
         <a routerLink="login" (click)="logout()" class="nav-link"  style="color: aliceblue;">
             <mat-icon>power_settings_new</mat-icon>
           Log Out</a>

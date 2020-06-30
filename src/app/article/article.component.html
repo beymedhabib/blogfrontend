@@ -1,1 +1,71 @@
-<p>article works!</p>
+<!-- <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 font-italic">{{table.title}}</h1>
+      <p class="lead my-3">{{table.subject}}</p>
+      <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+    </div>
+  </div> -->
+<div
+  class="row no-gutters border rounded overflow-hidden flex-md-row mb-2 shadow-sm h-md-250 position-relative bg-white">
+  <div class="col-md-8 p-4 d-flex flex-column position-static">
+    <h3 class="mb-0">{{table?.title}}</h3>
+    <div class="mb-1 text-muted">Nov 12</div>
+    <p class="card-text mb-auto">{{table?.subject}}.</p>
+  </div>
+  <div class="col-md-4 d-none d-lg-block">
+    <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect>
+        </svg> -->
+    <img class="bd-placeholder-img card-img-top" width="100%" height="225" src='{{table?.image}}'>
+  </div>
+  <div class="form-group has-default col-md-8">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+          <i class="material-icons">comment</i>
+        </span>
+      </div>
+      <form [formGroup]='commente' class='col-md-10'>
+        <input formControlName="comment" type="text" class="form-control col-md-8" placeholder="Comentaire...">
+        <button (click)="sendMessage()" class="btn btn-primary btn-round mt-4">Commment</button>
+      </form>
+      <!--<input [(ngModel)]="message" />
+              <button (click)="sendMessage()">Send</button> -->
+    </div>
+  </div>
+  <!-- <mat-icon>thumb_up</mat-icon>
+  <mat-icon>thumb_down</mat-icon> -->
+</div>
+<!-- <div class="mesgs" >
+          <div class="msg_history" >
+            <div *ngFor="let message of commentaire">
+              <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+              </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <h3>{{message.user}}</h3>
+                  <p>{{message.comment}}</p>
+                  <span class="time_date"> {{message.createdDate | date}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div> -->
+<div class="my-3 p-3 bg-white rounded shadow-sm">
+  <h6 class="border-bottom border-gray pb-2 mb-0">Comment</h6>
+  <div class="media text-muted pt-3" *ngFor="let message of commentaire.reverse()">
+    <!-- <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32">
+      <title>Placeholder</title>
+      <rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
+    </svg> -->
+    <mat-icon>account_box</mat-icon>
+    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+      <strong class="d-block text-gray-dark">{{message.user}}</strong>
+      {{message.comment}}
+    </p>
+    <span class="time_date"> {{message.createdDate | date}}</span>
+  </div>
+</div>

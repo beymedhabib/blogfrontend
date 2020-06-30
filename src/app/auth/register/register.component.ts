@@ -24,7 +24,6 @@ this.Api.register(this.registerform.value).subscribe(res=>{
   console.log(res);
 })
 this.router.navigateByUrl('/login');
-
   }
 
 }

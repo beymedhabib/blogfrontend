@@ -15,8 +15,7 @@ export class GuardGuard implements CanActivate {
       if (token === null) {
         this.route.navigateByUrl('/login');
         return false;
-      } else {
-        return true;
       }
+      return true;
   }
 }
