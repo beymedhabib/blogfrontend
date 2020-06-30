@@ -38,29 +38,10 @@
   <!-- <mat-icon>thumb_up</mat-icon>
   <mat-icon>thumb_down</mat-icon> -->
 </div>
-<!-- <div class="mesgs" >
-          <div class="msg_history" >
-            <div *ngFor="let message of commentaire">
-              <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
-              </div>
-              <div class="received_msg">
-                <div class="received_withd_msg">
-                  <h3>{{message.user}}</h3>
-                  <p>{{message.comment}}</p>
-                  <span class="time_date"> {{message.createdDate | date}}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div> -->
+
 <div class="my-3 p-3 bg-white rounded shadow-sm">
   <h6 class="border-bottom border-gray pb-2 mb-0">Comment</h6>
   <div class="media text-muted pt-3" *ngFor="let message of commentaire.reverse()">
-    <!-- <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg"
-      preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32">
-      <title>Placeholder</title>
-      <rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
-    </svg> -->
     <mat-icon>account_box</mat-icon>
     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
       <strong class="d-block text-gray-dark">{{message.user}}</strong>
